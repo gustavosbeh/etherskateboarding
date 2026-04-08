@@ -1,15 +1,246 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi primera web</title>
-</head>
+    <title>Ether Skateboarding</title>
 
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f2f2f2;
+            margin:0;
+            margin:0;
+    padding-top:70px;
+        }
+
+        .nav{
+            .nav{
+    background-color:#111;
+    color:white;
+    padding:15px;
+    font-size:18px;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+        }
+
+        .nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:10px;
+        }
+
+        .nav a:hover{
+            text-decoration:underline;
+        }
+
+        .container{
+    background:white;
+    max-width:1100px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+        h1{
+            color:#222;
+        }
+
+        h2{
+            color:#333;
+        }
+
+        p{
+            color:#555;
+            line-height:1.6;
+        }
+
+        img{
+            width:300px;
+            border-radius:10px;
+        }
+
+        button{
+            background-color:#111;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#444;
+        }
+
+ .hero{
+    background-image:url("https://images.unsplash.com/photo-1518398046578-8cca57782e17?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:140px 20px;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero h1,
+.hero p,
+.hero button{
+    position:relative;
+    z-index:2;
+}
+.productos{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    border-radius:5px;
+}
+
+.card h3{
+    margin-top:10px;
+}
+
+.card button{
+    margin-top:10px;
+}
+.footer{
+    background:#111;
+    color:white;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer-content{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    text-decoration:underline;
+}
+
+.copyright{
+    font-size:12px;
+    opacity:0.7;
+}
+    </style>
+    
+    
+</head>
 <body>
 
-<h1>Hola, este es mi trabajo</h1>
-<p>Plataforma web AIEP</p>
+    <div class="nav">
+        <div class="hero">
+    <h1>ETHER SKATEBOARDING</h1>
+    <p>Ride the streets. Define your ether.</p>
+    <button>Explorar colección</button>
+</div>
+
+    <div class="container">
+
+        <h1 id="inicio">Ether Skateboarding</h1>
+        <p>
+            Marca chilena inspirada en la cultura skate, el estilo urbano y la libertad de las calles.
+            Ether Skateboarding busca representar a quienes viven el skate como una forma de expresión,
+            identidad y movimiento.
+        </p>
+
+        <h2 id="productos">Colección Ether</h2>
+
+<div class="productos">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=500">
+        <h3>Tablas Skate</h3>
+        <p>Diseños urbanos inspirados en la calle.</p>
+        <button>Ver más</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=500">
+        <h3>Poleras</h3>
+        <p>Estilo streetwear Ether Skateboarding.</p>
+        <button>Ver más</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?w=500">
+        <h3>Hoodies</h3>
+        <p>Comodidad y actitud skate.</p>
+        <button>Ver más</button>
+    </div>
+
+</div>
+        <p>
+            Somos una propuesta enfocada en el skateboarding nacional, combinando diseño, actitud y esencia callejera.
+            Nuestra identidad nace desde lo urbano, con inspiración en la energía de la ciudad, la creatividad
+            y la comunidad skater chilena.
+        </p>
+
+
+
+        <h2 id="contacto">Contacto</h2>
+        <p>Email: etherskateboarding@email.com</p>
+        <p>Instagram: @etherskateboarding.cl</p>
+        <p>Ubicación: Chile</p>
+
+    </div>
+    <footer class="footer">
+    <div class="footer-content">
+        <h3>Ether Skateboarding</h3>
+        <p>Ride the streets. Define your ether.</p>
+
+        <div class="footer-links">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <p class="copyright">
+            © 2025 Ether Skateboarding - Chile
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
